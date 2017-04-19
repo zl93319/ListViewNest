@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="3dp"
+                                    app:cardCornerRadius="2dp"
+                                    app:cardElevation="2dp"
+                                    app:cardBackgroundColor="#fff"
+                                    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="正机长"
+            android:textColor="#ccccc7"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="不怕"
+            android:textColor="#ccccc7"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_fg"
+            android:layout_marginTop="-6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="__"
+            android:textColor="#ccccc7"
+            android:textSize="16dp"/>
+
+        <info.hoang8f.widget.FButton
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="12dp"
+            android:drawableLeft="@mipmap/maintenance_close"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="-10px"
+            android:shadowColor="#842d2d"
+            android:text="解雇"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            app:buttonColor="#ef5050"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
